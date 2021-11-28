@@ -42,13 +42,6 @@ function getRandomArbitrary(min, max) {
 
 }
 
-var sleep = require('sleep');
-
-bot.on('chat', function(username, message) {
-  if (username === bot.username) return;
-  console.log(message);
-});
-
 bot.on('health',function() {
     if(bot.food < 15) {
         bot.activateItem();
